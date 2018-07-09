@@ -72,3 +72,7 @@ All the additional features have also been implemented.<br/>
 
 Finally, I have used BASE62 encoding to shorten URLs. The approach basically is to encode the DB id's of URLs to BASE62. BASE62 because a total 0f 62 characters can be used to create URLs in all.<br />
 There is just one table for simplicity<br/>
+
+One important thing to note is if a user creates his/her custom URL that clashes with current short URL or in future may clash with short URL. The URL created latest will be given proprity assuming old may have expired or will expire sooner. This is not the best approach sth. can be done in case of collisions like not giving the URL if it is a clash or giving the next hash in case of clash. As the scope for this app was limited, I have not implemented this technique. <br/>
+The short URL structure is http://localhost:8000/{BASE62Encoding}/short_url/<br/>
+The get Stats URL structure is http://localhost:8000/{BASE62Encoding}/get_stats/<br/>
