@@ -1,10 +1,9 @@
-# Zomato Scraper
+# URL shortener
 
-This is a celery based Django app.<br />
+This is a Rest framework based Django app.<br />
 You need to have the following on your system before you can run the app :<br />
 Python2<br />
 Postgres<br />
-RabbitMQ<br />
 Anaconda<br />
 
 1. Once these are installed:<br />
